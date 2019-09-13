@@ -30,10 +30,10 @@
             <div class="form-group" ng-class="{'has-error': signupCtrl.showError}">
                 <label for="favoriteDish">Favorite Dish</label>
                 <input class="form-control" type="text" name="favoriteDish" ng-model="signupCtrl.user.favoriteDish"/>
-                <span ng-show="signupCtrl.showError" class="help-block">That dish doesn't exist.</span>
+                <span ng-show="signupCtrl.showError" class="help-block">No such menu number exists.</span>
             </div>
             <input type="submit" class="btn btn-default" value="Signup"/>
-            <span class="text-success" ng-show="signupCtrl.showMessage">You have signed up.</span>
+            <span class="text-success" ng-show="signupCtrl.showMessage">Your information has been saved.</span>
         </form>
     </div>
 
