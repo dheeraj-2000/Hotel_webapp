@@ -23,9 +23,9 @@
             </div>
             <div class="form-group" ng-class="{'has-error': (signupForm.phone.$error.required && (!signupForm.phone.$pristine || signupForm.$submitted)) || (signupForm.phone.$error.minlength || signupForm.phone.$error.maxlength)}">
                 <label for="phone">Phone Number *</label>
-                <input class="form-control" type="number" name="phone" ng-model="signupCtrl.user.phone" ng-minlength="9" ng-maxlength="9" required />
+                <input class="form-control" type="number" name="phone" ng-model="signupCtrl.user.phone" ng-minlength="10" ng-maxlength="10" required />
                 <span ng-show="signupForm.phone.$error.required && (!signupForm.phone.$pristine || signupForm.$submitted)" class="help-block">Please enter your phone number.</span>
-                <span ng-show="signupForm.phone.$error.minlength || signupForm.phone.$error.maxlength" class="help-block">Your phone number should be 9 digits long.</span>
+                <span ng-show="signupForm.phone.$error.minlength || signupForm.phone.$error.maxlength" class="help-block">Your phone number should be 10 digits long.</span>
             </div>
             <div class="form-group" ng-class="{'has-error': signupCtrl.showError}">
                 <label for="favoriteDish">Favorite Dish</label>
